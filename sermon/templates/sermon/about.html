@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/materialize.min.css" media="screen,projection" />
+    <!-- My styles -->
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/style.css" media="screen,projection" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="event-header">
+        <div class="tinth">
+            <h4 class="event-title white-text">About</h4>
+        </div>
+        <div>
+            <div class="navbar-fixed">
+                <nav class="nav-wrapper z-depth-0 transparent">
+                    <div class="nav-container">
+                        <a href="#" class="brand-logo left"><img src="../../static/sermon/Images/logo.jpg" alt="" class="responsive-img"></a>
+                        <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
+                            <i class="material-icons blue-text">menu</i>
+                        </a>
+                        <ul class="hide-on-med-and-down right">
+                            <li><a href="{% url 'sermon:index'%}">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="{% url 'sermon:event'%}">Events</a></li>
+                            <li><a href="#">Sermons</a></li>
+                            <li><a href="{% url 'sermon:blog'%}">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+                
+            </div>
+        </div>
+
+        <ul class="sidenav right" id="mobile-menu">
+            <li><a href="{% url 'sermon:index'%}">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="{% url 'sermon:event'%}">Events</a></li>
+            <li><a href="#">Sermons</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div class="about">
+            <div class="container">
+                    <p>
+                        AGMI is a Non-Denominational ministry; it is an Apostolic, evangelistic and a Teaching
+                        ministry which started officially on 8th February, 2015 in the city of Jos.<br>
+            
+                        The ministry began after the Lord specifically spoke to our set-man,
+                        Dr. Luka Satlong King on the 25th of March, 2014 while he was praying in the morning.
+                    </p>
+                </div>
+    </div>
+  
+
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>Subscribe to Our newsletter</h5>
+                    <form action="">
+                        <div class="input-field">
+                            <input type="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" value="Submit" class="btn orange">
+                        </div>
+                    </form>
+                </div>
+                <div class="col s12 l6">
+                    <h5>Connect with us</h5>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Twitter</a><br>
+                    <a href="#">Instagram</a><br>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                copyright &copy; 2019 AGMI Media
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../static/sermon/js/materialize.min.js"></script>
+    <script>
+        // sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+        //slider
+        const slider = document.querySelector('.slider');
+        M.Slider.init(slider, {
+            indicators: false,
+            height: 550,
+            transition: 500,
+            interval: 5000
+
+        });
+        const parallax = document.querySelector('.parallax');
+        M.Parallax.init(parallax, {
+
+        });
+    </script>
+</body>
+
+</html>

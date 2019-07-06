@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/materialize.min.css"
+        media="screen,projection" />
+    <!-- My styles -->
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/style.css" media="screen,projection" />
+    <!-- owl-carousel -->
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/owl.carousel.min.css"
+        media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/owl.theme.default.min.css"
+        media="screen,projection" />
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="tint-head hide-on-small-only"></div>
+        <div class="tint-head1 hide-on-med-and-up"></div>
+        <div>
+            <div class="navbar-fixed">
+                <nav class="nav-wrapper z-depth-0 transparent">
+                    <div class="nav-container">
+                        <a href="#" class="brand-logo left"><img src="../../static/sermon/Images/logo.jpg" alt=""
+                                class="responsive-img"></a>
+                        <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
+                            <i class="material-icons white-text">menu</i>
+                        </a>
+                        <ul class="hide-on-med-and-down right">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="{% url 'sermon:about'%}">About</a></li>
+                            <li><a href="{% url 'sermon:event'%}">Events</a></li>
+                            <li><a href="#">Sermons</a></li>
+                            <li><a href="{% url 'sermon:blog'%}">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+                <div class="caption">
+                    <p class="hide-on-small-only">
+                        ... raising a people of Glory and Absolute Dominion
+                    </p>
+                </div>
+                <div class="center">
+                    <div class="caption1">
+                        <p class="hide-on-med-and-up">
+                            Absolute Dominion
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <ul class="sidenav right" id="mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="{% url 'sermon:about'%}">About</a></li>
+            <li><a href="{% url 'sermon:event'%}">Events</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <h5>Subscribe to Our newsletter</h5>
+                    <form action="">
+                        <div class="input-field">
+                            <input type="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" value="Submit" class="btn orange">
+                        </div>
+                    </form>
+                </div>
+                <div class="col s12 m6 l6">
+                    <h5>Connect with us</h5>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Twitter</a><br>
+                    <a href="#">Instagram</a><br>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                copyright &copy; 2019 AGMI Media
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../static/sermon/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../static/sermon/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../../static/sermon/js/main.js"></script>
+</body>
+</html>

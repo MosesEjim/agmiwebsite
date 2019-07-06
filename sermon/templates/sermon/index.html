@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/materialize.min.css"
+        media="screen,projection" />
+    <!-- My styles -->
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/style.css" media="screen,projection" />
+    <!-- owl-carousel -->
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/owl.carousel.min.css"
+        media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../static/sermon/css/owl.theme.default.min.css"
+        media="screen,projection" />
+
+    <title>AGMI</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="tint-head hide-on-small-only"></div>
+        <div class="tint-head1 hide-on-med-and-up"></div>
+        <div>
+            <div class="navbar-fixed">
+                <nav class="nav-wrapper z-depth-0 transparent">
+                    <div class="nav-container">
+                        <a href="#" class="brand-logo left"><img src="../../static/sermon/Images/logo.jpg" alt=""
+                                class="responsive-img"></a>
+                        <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
+                            <i class="material-icons white-text">menu</i>
+                        </a>
+                        <ul class="hide-on-med-and-down right">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="{% url 'sermon:about'%}">About</a></li>
+                            <li><a href="{% url 'sermon:event'%}">Events</a></li>
+                            <li><a href="#">Sermons</a></li>
+                            <li><a href="{% url 'sermon:blog'%}">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+                <div class="caption">
+                    <p class="hide-on-small-only">
+                        ... raising a people of Glory and Absolute Dominion
+                    </p>
+                </div>
+                <div class="center">
+                    <div class="caption1">
+                        <p class="hide-on-med-and-up">
+                            Absolute Dominion
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <ul class="sidenav right" id="mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="{% url 'sermon:about'%}">About</a></li>
+            <li><a href="{% url 'sermon:event'%}">Events</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="count-down">
+
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <h5 class="white-text">Upcoming Event</h5>
+                <p class="white-text">
+                    <h3 class="white-text">Kingdom Wealth Summit</h3> 
+                    
+                </p>
+            </div>
+
+            <div class="col s12 m8 l8">
+                <div class="row">
+                    <div class="col s3 m3 l3 white-text">
+                        <h3 id="day">13</h3>days
+                    </div>
+                    <div class="col s3 m3 l3 white-text">
+                        <h3 id="hour">24</h3>hours
+                    </div>
+                    <div class="col s3 m3 l3 white-text">
+                        <h3 id="minute">56</h3>minutes
+                    </div>
+                    <div class="col s3 m3 l3 white-text">
+                        <h3 id="second">13</h3>seconds
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="space">
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="title">
+                <h4 class="center">OUR MISSION</h4>
+            </div>
+            <div class="col s12 l4 m6">
+                <img src="../../static/sermon/Images/about.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l8 m6">
+
+                <p>
+                    AGMI is a Non-Denominational ministry; it is an Apostolic, evangelistic and a Teaching
+                    ministry which started officially on 8th February, 2015 in the city of Jos.<br>
+        
+                    The ministry began after the Lord specifically spoke to our set-man,
+                    Dr. Luka Satlong King on the 25th of March, 2014 while he was praying in the morning.
+                </p>
+                <a href="{% url 'sermon:about'%}">Read more></a>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="title">
+                <h4 class="center">OUR VISION</h4>
+            </div>
+            <div class="col s12 l4 m6 push-l8">
+                <img src="../../static/sermon/Images/about.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l8 m6 pull-l4">
+
+                <p>
+                    AGMI is a Non-Denominational ministry; it is an Apostolic, evangelistic and a Teaching
+                    ministry which started officially on 8th February, 2015 in the city of Jos.<br>
+        
+                    The ministry began after the Lord specifically spoke to our set-man,
+                    Dr. Luka Satlong King on the 25th of March, 2014 while he was praying in the morning.
+                </p>
+
+                <a href="{% url 'sermon:about'%}">Read more></a>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <!-- <div class="parallax-container">
+        <div class="tint hide-on-med-and-down">
+
+        </div>
+
+        <div class="parallax">
+            <img src="../../static/sermon/Images/Untitled-3.jpg" alt="" class="responsive-img">
+        </div>
+    </div> -->
+    <div class="custom-parallax">
+        <div class="tint-head1">
+
+
+        </div>
+        <div class="container center-align">
+            <h3 class="center custom-text">
+                RECENT MESSAGES
+            </h3>
+        </div>
+    </div>
+    <div class="container">
+
+    </div>
+
+    <div class="container-custom">
+        <div class="row">
+            <div class="owl-carousel owl-theme">
+                {% for sermon in sermons%}
+               
+                    <div class="card z-depth-0">
+                        <div class="card-image">
+                            <img src="{{sermon.photo.url}}" alt="" class="responsive-img">
+    
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">
+                                <b>
+                                    <h6>{{sermon.title}}</h6>
+                                </b>
+                            </span>
+                            <p>
+                                Apostle Luka Satlong
+                            </p>
+                            <a href="#" class=" btn-floating white z-depth-0">
+                                <i class="material-icons blue-text">save</i>
+                            </a>
+                            <button class="btn-floating white z-depth-0" onclick="playAudio('{{sermon.file.url}}')">
+                                <i>
+                                    <img src="../../static/sermon/Images//play.png" alt="">
+                                </i>
+                            </button>
+    
+    
+                        </div>
+    
+                    </div>
+                
+    
+                {% endfor %}
+            </div>
+    
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <h5>Subscribe to Our newsletter</h5>
+                    <form action="">
+                        <div class="input-field">
+                            <input type="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" value="Submit" class="btn orange">
+                        </div>
+                    </form>
+                </div>
+                <div class="col s12 m6 l6">
+                    <h5>Connect with us</h5>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Twitter</a><br>
+                    <a href="#">Instagram</a><br>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                copyright &copy; 2019 AGMI Media
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../static/sermon/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../static/sermon/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../../static/sermon/js/main.js"></script>
+    <script type="text/javascript">
+        //countdown
+        function countdown() {
+            var currentDate = new Date();
+            var eventDate = new Date(2019, 6, 8);
+
+            var currentTime = currentDate.getTime();
+            var eventTime = eventDate.getTime();
+
+            var timeLeft = eventTime - currentTime;
+
+            var second = Math.floor(timeLeft / 1000);
+            var minute = Math.floor(second / 60);
+            var hour = Math.floor(minute / 60);
+            var day = Math.floor(hour / 24);
+
+            hour = hour%24;
+            minute = minute%60;
+            second = second%60;
+
+            if(hour<10){
+                hour = "0"+hour;
+            }
+            if(minute<10){
+                minute = "0"+minute;
+            }
+            if(second<10){
+                second = "0"+second;
+            }
+
+            document.getElementById("day").innerText = day;
+            document.getElementById("hour").innerText = hour;
+            document.getElementById("minute").innerText = minute;
+            document.getElementById("second").innerText = second;
+            
+           
+            setTimeout(countdown, 1000);
+        }
+        countdown();
+    </script>
+</body>
+
+</html>
